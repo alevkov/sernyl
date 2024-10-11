@@ -58,14 +58,14 @@ const App: React.FC = () => {
   const [typedText, setTypedText] = useState('');
   const fullText = `sernyl@OMac-Studio.local
 --------------------------------
-OS: macOS 13.4, human 29.25
+OS: macOS 13.4
 Host: local
 Kernel: Polish-Ukrainian
 Uptime: 3 days & nights (record)
 Shell: zsh 5.9
 UA: (Language) Fluent
-DE: (Language) Conversational
 EN: (Language) Fluent
+DE: (Language) Conversational
 RU: (Language) No.
 Terminal: Wave
 Terminal Font: Monaco 12
@@ -74,15 +74,13 @@ GPU: Apple M2 Ultra
 Memory: 12369MiB / 65536MiB
 
 Interests:
-* e-music prod
-* poetry (writing)
-* etymology/linguistics
+* learning
 
 Dislikes:
 * what technology became
 
 Gender: bender
-* 0/1 pronoons`;
+* https://en.pronouns.page/@sernyl`
 
   useEffect(() => {
     let i = 0;
@@ -106,8 +104,7 @@ Gender: bender
             <AsciiArt />
           </div>
           <div className="info-container bg-gray-800 p-6 rounded-lg shadow-lg w-full">
-            <h1 className="text-3xl font-bold mb-4 text-green-400">@sernyl</h1>
-            <p className="text-sm mb-4">your humble Anarcho-Shulginist, data scientist, programmer, and neuropsychopharm nerd.</p>
+            <h1 className="text-3xl font-bold mb-4 text-green-400">⏿ sernyl</h1>
             <div className="mb-6">
               <pre className="whitespace-pre-wrap text-sm">{typedText}</pre>
             </div>
@@ -116,12 +113,11 @@ Gender: bender
               <InfoItem icon={MessageCircle} label="Discord" value={<a href="https://discordapp.com/users/sernyl" className="text-blue-400 hover:underline">@sernyl</a>} />
               <InfoItem icon={User} label="Name" value="[redacted]" />
               <InfoItem icon={Briefcase} label="Occupation" value="Data Warlock" />
-              <InfoItem icon={Heart} label="Passion" value="Neuropsychopharmacology" />
+              <InfoItem icon={Heart} label="Passion" value="Harm Redux" />
               <InfoItem icon={Music} label="Hobby" value="Electronic music" />
               <InfoItem icon={Book} label="Writing" value="Poetry" />
-              <InfoItem icon={Globe} label="Languages" value="UA, PL, EN" />
-              <InfoItem icon={Code} label="Tech Stack" value="Python, R, JavaScript, React" />
-              <InfoItem icon={Terminal} label="Favorite Tool" value="Vim" />
+              <InfoItem icon={Globe} label="Languages" value="UA, DE, EN" />
+              <InfoItem icon={Code} label="Stack" value="SERN (SQL, Express, React, Node.js" />
             </div>
           </div>
         </div>
